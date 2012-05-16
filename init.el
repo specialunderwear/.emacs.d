@@ -1,6 +1,8 @@
+;; set up load path
 (setq dotfiles-dir (file-name-directory
                     (or (buffer-file-name) load-file-name)))
 (setq custom-file (concat dotfiles-dir "custom.el"))
+(add-to-list 'load-path dotfiles-dir)
 
 (setq mac-command-key-is-meta nil)
 
@@ -79,3 +81,8 @@
     (load
      (expand-file-name "~/.emacs.d/elpa/package.el"))
   (package-initialize))
+
+;; load file that activates all packages
+(require 'activate)
+
+(provide 'init)
