@@ -6,8 +6,11 @@
 
 (setq mac-command-key-is-meta nil)
 
-;;use tabs for indentation, not spaces
-(setq-default c-basic-offset 8)
+;; use spaces instead of tabs.
+(setq c-basic-indent 2)
+(setq tab-width 4)
+(setq indent-tabs-mode nil)
+
 ;; hitting delete will delete the highlighted region
 (pending-delete-mode 1)
 
