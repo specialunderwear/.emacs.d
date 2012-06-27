@@ -42,7 +42,7 @@
 
 ;;;;;;;;;;;;;;; color settings ;;;;;;;;;;;;;;;;;;;;;;
 (set-foreground-color "grey100" )
-;;(set-background-color "#000044" )
+(set-background-color "#000044" )
 (set-background-color "black")
 
 (set-cursor-color "yellow")
