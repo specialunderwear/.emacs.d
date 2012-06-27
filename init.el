@@ -29,9 +29,6 @@
 ;; title bar shows name of current buffer ;;
 (setq frame-title-format '("emacs: %*%+ %b"))
 
-;; don't show the startup message every time, I know I'm using emacs
-(setq inhibit-startup-message t)
-
 ;;;; use y or n instead of yes or no
 (fset 'yes-or-no-p 'y-or-n-p)
 
@@ -60,7 +57,6 @@
                       )))
 (set-face-foreground 'font-lock-comment-face       "SlateGrey");"OrangeRed");"gray")
 (set-face-foreground 'font-lock-string-face        "OrangeRed")
-;(set-face-foreground 'font-lock-doc-string-face    "gray")
 (set-face-foreground 'font-lock-function-name-face "green")
 (set-face-foreground 'font-lock-variable-name-face "cyan")
 (set-face-foreground 'font-lock-type-face          "SandyBrown")
