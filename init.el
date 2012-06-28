@@ -84,7 +84,7 @@
      (expand-file-name "~/.emacs.d/elpa/package.el"))
   (package-initialize))
 
-;; load file that activates all packages
+;; load file that activates all packages and apply customizations
 (require 'activate)
 
 (provide 'init)
