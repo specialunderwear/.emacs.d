@@ -3,7 +3,8 @@
                     (or (buffer-file-name) load-file-name)))
 (setq custom-file (concat dotfiles-dir "custom.el"))
 (add-to-list 'load-path dotfiles-dir)
-(add-to-list 'load-path (concat dotfiles-dir "external/"))
+(setq external-dir (concat dotfiles-dir "external/"))
+(add-to-list 'load-path external-dir)
 
 (setq mac-command-key-is-meta nil)
 
