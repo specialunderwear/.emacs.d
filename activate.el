@@ -12,4 +12,12 @@
 ;; ruby indent
 (setq ruby-indent-level 4)
 
+;; autocomplete
+(require 'auto-complete-config)
+(add-to-list 'ac-dictionary-directories "~/.emacs.d/external/ac-dict")
+(ac-config-default)
+;; autocomplete requires manual trigger of tab
+(ac-set-trigger-key "TAB")
+(setq ac-auto-start nil)
+
 (provide 'activate)
