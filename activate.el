@@ -18,8 +18,13 @@
 (require 'auto-complete-config)
 (add-to-list 'ac-dictionary-directories "~/.emacs.d/external/ac-dict")
 (ac-config-default)
-;; autocomplete requires manual trigger of tab
 (ac-set-trigger-key "TAB")
 (setq ac-auto-start nil)
+
+;; erlang
+(add-to-list 'load-path (concat external-dir "erlang/"))
+;;(setq erlang-root-dir "/usr/local/otp")
+;;(setq exec-path (cons "/usr/local/otp/bin" exec-path))
+(require 'erlang-start)
 
 (provide 'activate)
