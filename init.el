@@ -87,6 +87,13 @@
 (require 'yaml-mode)
 (add-to-list 'auto-mode-alist '("\\.ya?ml\\'" . yaml-mode))
 (add-to-list 'auto-mode-alist '("\\.sls\\'" . yaml-mode))
+(add-hook 'yaml-mode-hook
+    (lambda ()
+	  (define-key yaml-mode-map "\C-m" 'newline-and-indent)
+	  (setq indent-tabs-mode nil)
+	  (infer-indentation-style)
+	)
+)
 
 ;; load file that activates all packages and apply customizations
 (load "~/.emacs.d/activate.el")
