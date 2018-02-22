@@ -2,7 +2,6 @@
 (setq dotfiles-dir (file-name-directory
                     (or (buffer-file-name) load-file-name)))
 (setq custom-file (concat dotfiles-dir "custom.el"))
-(add-to-list 'load-path dotfiles-dir)
 (setq external-dir (concat dotfiles-dir "external/"))
 (add-to-list 'load-path external-dir)
 
@@ -86,6 +85,6 @@
   (package-initialize))
 
 ;; load file that activates all packages and apply customizations
-(require 'activate)
+(load "~/.emacs.d/activate.el")
 
 (provide 'init)
